@@ -1,0 +1,56 @@
+<ion-label position="stacked">UserName</ion-label>
+  <ion-input placeholder="Enter username" ></ion-input>
+  <ion-label position="stacked">Password</ion-label>
+  <ion-input placeholder="enter Password"></ion-input>
+  <ion-button style="margin-left:30px;">Login</ion-button> 
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>NewsTime</ion-card-title>
+      <ion-card-subtitle>Lets makes it easier</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <img src="../../assets/image/news.jfif"><br>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods.
+    </ion-card-content>
+  </ion-card>
+
+
+
+<ion-list>
+    <ion-radio-group value="grape">
+      <ion-label>Subscriptions</ion-label>
+      <ion-item>
+        <ion-label>The Hindu</ion-label>
+        <ion-radio slot="start" value="option1"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Times of India</ion-label>
+        <ion-radio slot="start" value="option2"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Chennai Times</ion-label>
+        <ion-radio slot="start" value="option3"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Deccan chronicle</ion-label>
+        <ion-radio slot="start" value="option4"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Indian Express</ion-label>
+        <ion-radio slot="start" value="option5"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      </ion-list>
+
+      <ion-toolbar>
+      <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>

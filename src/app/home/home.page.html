@@ -8,21 +8,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-header style="margin-top: 90px;font-size:xx-large;">Login</ion-header><br/>
   <ion-card>
-    <ion-card-header>
-      <ion-card-title>NewsTime</ion-card-title>
-      <ion-card-subtitle>Lets makes it easier</ion-card-subtitle>
-    </ion-card-header>
-  
     <ion-card-content>
-      <img src="../../assets/image/news.jfif"><br>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods.
-    </ion-card-content>
-  </ion-card> 
- 
-  <ion-button (click)="go()" style="margin-left:80px;" > Go </ion-button>
-</ion-content>
+    <ion-label position="stacked">UserName</ion-label>
+    <ion-input placeholder="Enter username" ></ion-input>
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input placeholder="enter Password"></ion-input>
+    <ion-button style="margin-left:30px;">Login</ion-button>
+  </ion-card-content>
+  </ion-card>
+  </ion-content>
+
 <ion-tab>
   <ion-tab-bar slot="bottom" color="primary">
     

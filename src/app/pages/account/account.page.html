@@ -4,43 +4,25 @@
     <ion-title>My Account</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-  
+  <div class="data">
   <ion-label position="stacked">Name</ion-label>
   <ion-input placeholder="Enter Name" ></ion-input>
   <ion-label position="stacked">Phone Number</ion-label>
   <ion-input placeholder="Enter phno "></ion-input>
   <ion-label position="stacked">Location</ion-label>
   <ion-input placeholder="Enter Location"></ion-input>
-  <ion-list>
-    <ion-radio-group value="grape">
-      <ion-label>Subscriptions</ion-label>
-      <ion-item>
-        <ion-label>The Hindu</ion-label>
-        <ion-radio slot="start" value="option1"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>Times of India</ion-label>
-        <ion-radio slot="start" value="option2"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Chennai Times</ion-label>
-        <ion-radio slot="start" value="option3"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Deccan chronicle</ion-label>
-        <ion-radio slot="start" value="option4"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Indian Express</ion-label>
-        <ion-radio slot="start" value="option5"></ion-radio>
-      </ion-item>
-      </ion-radio-group>
-      </ion-list>
-      
+</div>
+  <ion-item class="item">
+    <ion-label>Subscriptions</ion-label> <br/><br/>
+    
+    <ion-select value="hindu" okText="select" cancelText="Dismiss" [(ngModel)]="getSelectedSubject"  (ionChange)="getSelectedSubjectValue(getSelectedSubject)">
+    
+      <ion-select-option value="hindu">The Hindu</ion-select-option>
+      <ion-select-option value="deccan chronicle">Deccan Chronicle</ion-select-option>
+      <ion-select-option value="times of india">Times of india</ion-select-option>
+      <ion-select-option value="chennai times">Chennai Times</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button (click)="subscribe()" style="margin-top: 30px;margin-left:30px;">Subscribe</ion-button>
 </ion-content>

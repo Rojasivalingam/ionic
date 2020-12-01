@@ -1,21 +1,17 @@
+
 <ion-header translucent>
     <ion-toolbar>
       <ion-title>Subscribers</ion-title>
     </ion-toolbar>
-    <ion-toolbar>
-      <ion-searchbar></ion-searchbar>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content fullscreen>
-    <ion-list>
-      <ion-item>Antony</ion-item>
-      <ion-item>Paul Raj</ion-item>
-      <ion-item>Dinesh kumar</ion-item>
-      <ion-item>Shylu</ion-item>
-      <ion-item>Hashini</ion-item>
-      <ion-item>Bharathi</ion-item>
-     <ion-item>Amudha</ion-item>
-    </ion-list>
+</ion-header>
+  <ion-content style="margin-left: 30px;">
+    <ion-card>
+  <ion-input value="">Newspapers</ion-input>
+  <ion-input value="0">Amount</ion-input>
+  <ion-input value="">Last payment </ion-input>
+  <ion-input value="0">Due-Amount</ion-input>
+  <ion-button (click)="payment()">Proceed payment</ion-button>
+    </ion-card>
   </ion-content>
 
   
