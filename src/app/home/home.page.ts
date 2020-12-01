@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild  } from '@angular/core';
 import { Router } from '@angular/router';
+import { IonInfiniteScroll } from '@ionic/angular';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -18,6 +19,8 @@ export class HomePage {
   account () {
     this.router.navigate(['account'])
   }
+
+
 }
 
   

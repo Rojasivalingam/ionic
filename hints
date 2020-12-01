@@ -5,18 +5,7 @@
   <ion-button style="margin-left:30px;">Login</ion-button> 
 
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>NewsTime</ion-card-title>
-      <ion-card-subtitle>Lets makes it easier</ion-card-subtitle>
-    </ion-card-header>
   
-    <ion-card-content>
-      <img src="../../assets/image/news.jfif"><br>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods.
-    </ion-card-content>
-  </ion-card>
 
 
 
@@ -54,3 +43,11 @@
       <ion-searchbar></ion-searchbar>
     </ion-toolbar>
   </ion-header>
+
+   <ion-select value="hindu" okText="select" cancelText="Dismiss" [(ngModel)]="getSelectedSubject"  (ionChange)="getSelectedSubjectValue(getSelectedSubject)">
+    
+      <ion-select-option value="hindu"></ion-select-option>
+      <ion-select-option value="deccan chronicle">Deccan Chronicle</ion-select-option>
+      <ion-select-option value="times of india">Times of india</ion-select-option>
+      <ion-select-option value="chennai times">Chennai Times</ion-select-option>
+    </ion-select>

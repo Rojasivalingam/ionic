@@ -8,33 +8,91 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header style="margin-top: 90px;font-size:xx-large;">Login</ion-header><br/>
+
   <ion-card>
+    <ion-card-header>
+      <ion-card-title>NewsTime</ion-card-title>
+      <ion-card-subtitle>Lets makes it easier</ion-card-subtitle>
+    </ion-card-header>
+  
     <ion-card-content>
-    <ion-label position="stacked">UserName</ion-label>
-    <ion-input placeholder="Enter username" ></ion-input>
-    <ion-label position="stacked">Password</ion-label>
-    <ion-input placeholder="enter Password"></ion-input>
-    <ion-button style="margin-left:30px;">Login</ion-button>
-  </ion-card-content>
-  </ion-card>
+      <img src="../../assets/image/news.jfif"><br>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods.
+    </ion-card-content>
+  </ion-card><br/>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>The Hindu</ion-card-title>
+      <ion-card-subtitle>India's National Newsaper since 1878</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/image/hindu.png"><br/>
+      <ion-button>Subscribe</ion-button>
+    </ion-card-content>
+    </ion-card><br/>
+
+     <ion-card>
+    <ion-card-header>
+      <ion-card-title>Deccan Chronicle</ion-card-title>
+      <ion-card-subtitle>The Largest Circulated Englih In SouthIndia</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/image/deccan.png"><br/>
+      <ion-button cd>Subscribe</ion-button>
+    </ion-card-content>
+    </ion-card><br/>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>The Times Of India</ion-card-title>
+        <ion-card-subtitle>Let The Truth Prevail</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="../../assets/image/toi.png"><br/>
+        <ion-button cd>Subscribe</ion-button>
+      </ion-card-content>
+      </ion-card><br/>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>The Economic Times</ion-card-title>
+          <ion-card-subtitle>Let The Truth Prevail</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="../../assets/image/ect.jfif"><br/>
+          <ion-button cd>Subscribe</ion-button>
+        </ion-card-content>
+        </ion-card><br/> 
+
+
+
+<!-- customised scroll -->
+    <!-- <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll> -->
+
   </ion-content>
 
 <ion-tab>
   <ion-tab-bar slot="bottom" color="primary">
     
-<ion-tab-button tab="account">
-  <ion-icon name="person" (click)= "account()" ></ion-icon> 
+<ion-tab-button tab="account" (click)= "account()">
+  <ion-icon name="person"  ></ion-icon> 
   <ion-label>Account</ion-label>
 </ion-tab-button>
   
-<ion-tab-button tab="subscribers">
-    <ion-icon name="person-add" (click)= "go()"></ion-icon>
+<ion-tab-button tab="subscribers" (click)= "go()">
+    <ion-icon name="person-add" ></ion-icon>
     <ion-label>subscribers</ion-label>
   </ion-tab-button>
    
-  <ion-tab-button tab="payment">
-      <ion-icon name="card" (click)="next()"></ion-icon> 
+  <ion-tab-button tab="payment" (click)="next()">
+      <ion-icon name="card" ></ion-icon> 
       <ion-label>payment</ion-label>
   </ion-tab-button>
 

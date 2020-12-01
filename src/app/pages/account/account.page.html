@@ -5,24 +5,14 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <div class="data">
   <ion-label position="stacked">Name</ion-label>
   <ion-input placeholder="Enter Name" ></ion-input>
   <ion-label position="stacked">Phone Number</ion-label>
   <ion-input placeholder="Enter phno "></ion-input>
   <ion-label position="stacked">Location</ion-label>
   <ion-input placeholder="Enter Location"></ion-input>
-</div>
-  <ion-item class="item">
-    <ion-label>Subscriptions</ion-label> <br/><br/>
-    
-    <ion-select value="hindu" okText="select" cancelText="Dismiss" [(ngModel)]="getSelectedSubject"  (ionChange)="getSelectedSubjectValue(getSelectedSubject)">
-    
-      <ion-select-option value="hindu">The Hindu</ion-select-option>
-      <ion-select-option value="deccan chronicle">Deccan Chronicle</ion-select-option>
-      <ion-select-option value="times of india">Times of india</ion-select-option>
-      <ion-select-option value="chennai times">Chennai Times</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <ion-button (click)="subscribe()" style="margin-top: 30px;margin-left:30px;">Subscribe</ion-button>
+
+  <ion-input value="Vendor">Brayden</ion-input>
+   <br/><br/>
+  <ion-button style="margin-top: 30px;margin-left:30px;">submit</ion-button>
 </ion-content>
