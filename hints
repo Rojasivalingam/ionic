@@ -46,7 +46,7 @@
 
    <ion-select value="hindu" okText="select" cancelText="Dismiss" [(ngModel)]="getSelectedSubject"  (ionChange)="getSelectedSubjectValue(getSelectedSubject)">
     
-      <ion-select-option value="hindu"></ion-select-option>
+      <ion-select-option value="hindu">Hindu</ion-select-option>
       <ion-select-option value="deccan chronicle">Deccan Chronicle</ion-select-option>
       <ion-select-option value="times of india">Times of india</ion-select-option>
       <ion-select-option value="chennai times">Chennai Times</ion-select-option>
